@@ -1,0 +1,24 @@
+{
+  "name": "my-own-private-web-server",
+  "version": "0.0.1",
+  "description": "This package contains a very simple web server that takes one argument for port and then serves index.html in the www directory.",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "web",
+    "server",
+    "port",
+    "node",
+    "fs",
+    "args",
+    "http"
+  ],
+  "author": "Leonard Shearer",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "minimist": "^1.2.6"
+  }
+}
