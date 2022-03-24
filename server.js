@@ -9,16 +9,15 @@ fs.readFile('./www/index.html', 'utf-8', (error, data) => {
     if (error) {
         console.error(error)
         return
-        process.exit(1)
     }
-})
 
-const server = http.createServer((request, response) => {
-    response.statusCode = 200
-    response.setHeader('Content-Type', 'text/html')
-    response.end(data)
-})
+    const server = http.createServer((request, response) => {
+        response.statusCode = 200
+        response.setHeader('Content-Type', 'text/html')
+        response.end(data)
+    })
 
-server.listen(port, () => {
-    console.log(`Server listening on port ${port}`)
+    server.listen(port, () => {
+        console.log(`Server listening on port ${port}`)
+    })
 })
